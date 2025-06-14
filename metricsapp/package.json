@@ -13,7 +13,9 @@
     "@types/react-dom": "^18.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.14.1",
     "react-scripts": "5.0.1",
+    "styled-components": "^5.3.11",
     "typescript": "^4.7.4",
     "web-vitals": "^2.1.4"
   },
@@ -22,12 +24,17 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "tauri": "tauri"
+    "tauri": "tauri",
+    "tauri:dev": "tauri dev",
+    "tauri:build": "tauri build",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "plugin:storybook/recommended"
     ]
   },
   "browserslist": {
@@ -43,7 +50,20 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/preset-typescript": "^7.27.1",
+    "@storybook/addon-essentials": "^7.6.20",
+    "@storybook/addon-interactions": "^7.6.20",
+    "@storybook/addon-links": "^7.6.20",
+    "@storybook/blocks": "^7.6.20",
+    "@storybook/preset-create-react-app": "^7.6.20",
+    "@storybook/react": "^7.6.20",
+    "@storybook/react-webpack5": "^7.6.20",
+    "@storybook/testing-library": "^0.2.1",
     "@tauri-apps/cli": "^1.0.3",
-    "cross-env": "^7.0.3"
+    "@types/styled-components": "^5.1.26",
+    "cross-env": "^7.0.3",
+    "eslint-plugin-storybook": "^0.8.0",
+    "storybook": "^7.6.20"
   }
 }
